@@ -1,0 +1,4 @@
+__pycache__
+.venv
+cognitive_search_account.json
+static/settings.js

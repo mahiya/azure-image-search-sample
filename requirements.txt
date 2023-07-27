@@ -1,0 +1,4 @@
+numpy
+tensorflow
+azure-search-documents
+flask
