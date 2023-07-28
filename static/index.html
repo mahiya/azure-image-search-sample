@@ -16,11 +16,15 @@
 <body>
 
     <div id="app" v-cloak>
+        <!-- ヘッダー -->
         <div class="row m-0 py-1 bg-dark">
             <h1 class="h4 text-white">Image Search Solution using Azure Cognitive Search - Vector Search</h1>
         </div>
+        <!-- ページ部分 -->
         <div class="row m-0 bg-light">
+            <!-- 画面左側 -->
             <div class="col p-3">
+                <!-- 選択可能な画像名一覧 -->
                 <h2 class="h4">Image File List</h2>
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-action" v-for="imageFileName in imageFileNames"
@@ -31,11 +35,14 @@
                     </li>
                 </ul>
             </div>
+            <!-- 画面右側 -->
             <div class="col col-8 p-3">
+                <!-- 選択された画像 -->
                 <div>
                     <h2 class="h4">Selected Image</h2>
                     <img v-bind:src="'images/' + selectedImageFileName" />
                 </div>
+                <!-- 検索結果の画像 -->
                 <div class="mt-3">
                     <h2 class="h4">Search Result (Similar Images)</h2>
                     <div>
