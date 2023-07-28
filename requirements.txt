@@ -1,4 +1,4 @@
-numpy
-tensorflow
-azure-search-documents
-flask
+numpy==1.25.1
+tensorflow==2.13.0
+azure-search-documents==11.3.0
+flask==2.3.2
